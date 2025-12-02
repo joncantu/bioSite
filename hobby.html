@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<!--
+  Student Name: Jonathan Cantu
+  File Name: hobby.html
+  Date: November 23, 2025
+-->
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>BioSite</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <h1>Gary Jones</h1>
+        <a href="index.html"
+          ><img
+            src="images/Gary.jpg"
+            alt="Image of Gary"
+            height="“220”"
+            width="“297”"
+        /></a>
+      </header>
+
+      <nav aria-label="Main navigation">
+        <p>
+          <a href="index.html">Home</a> &nbsp; &#9475; &nbsp;
+          <a href="about.html">About Gary</a> &nbsp; &#9475; &nbsp;
+          <a href="hobby.html">Hobby</a>
+        </p>
+      </nav>
+
+      <!-- Use the main area to add the main content of the webpage -->
+      <main class="hobby-grid">
+        <div>
+          <article class="hobby-card">
+            <h1>Gary's Hobby</h1>
+            <p>
+              Gary's favorite hike, Sky Pond, is in Rocky Mountain National Park
+              (RMNP). The Sky Pond trail leads you to the Lake of Glass. The Sky
+              Pond Trail hike features some of the best views in Rocky Mountain
+              National Park and many opportunities for viewing wildlife
+              including elk and marmots. This hike takes you past some of the
+              most beautiful alpine lakes in RMNP including Timberline Lake,
+              Lake of Glass, and Sky Pond itself.
+            </p>
+            <p>
+              The Sky Pond hike is approximately 8.6 miles each direction and
+              has an elevation gain of approximately 1,765 feet.
+            </p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.6341948342924!2d-105.66775732362221!3d40.28387546371397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87697c0b5cd877f3%3A0x117017a112a8e73d!2sSky%20Pond%20Lake%20Trail%2C%20Colorado%2080517!5e0!3m2!1sen!2sus!4v1763963094956!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <p>
+              Another one of Gary's other favorite hikes is Twin Sisters - near
+              RMNP across from Long's Peak (the most famous 14er in Colorado).
+            </p>
+
+            <p>
+              <img
+                src="images/TwinSisters.jpg"
+                alt="An image of the Twin Sisters peaks taken from a nearby trailhead."
+              />
+            </p>
+
+            <p>
+              Twin Sisters Peak is a steep adventure that takes you to the top
+              of the Continental Divide! The route is exposed and rocky in its
+              uppermost stretch, and there are a few sections of scrambling to
+              get to the summit. At the summit, you'll see amazing panoramic
+              views, including one of the finest views of Longs Peak in the
+              park.
+            </p>
+
+            <p>
+              <img
+                src="images/TwinSisters.webp"
+                alt="An image of the Twin Sisters peaks taken from the summit of one of the two peaks."
+              />
+            </p>
+
+            <p>
+              The Twin Sisters trail is 7.4 miles each direction with a 2,483
+              foot elevation gain.
+            </p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.7741230665706!2d-105.539876210896!3d40.302973988972916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8769635cc20bf5e7%3A0x6fadf3a615459d35!2sTwin%20Sisters%20Trailhead!5e0!3m2!1sen!2sus!4v1763963839690!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </article>
+
+          <article class="hobby-card">
+            <p>
+              Gary enjoys many other hikes throughout Colorado and has
+              accomplished quite a few notable hikes and summits over the years.
+            </p>
+            <h3>Some of Gary's Hikes</h3>
+            <ul>
+              <li>Long's Peak</li>
+              <img src="images/LongsPeak.jpg" />
+              <li>Quandary Peak (East and West approaches)</li>
+              <img src="images/QuandaryPeak.jpg" />
+              <li>Mt. Elbert</li>
+              <img src="images/MtElbert.jpg" />
+              <li>
+                Mt. Democrat, Mt. Cameron, and Mt. Lincoln (all in one day)
+              </li>
+              <img src="images/MtDemocrat.jpg" />
+              <li>Gray's Peak and Torreys Peak (in one day)</li>
+              <img src="images/TorreysGraysPeaks.jpg" />
+              <li>Twin Sisters</li>
+              <img src="images/TwinSisters.jpg" />
+              <li>Storm Mountain</li>
+              <img src="images/StormMountain.jpg" />
+            </ul>
+          </article>
+
+          <article class="hobby-card">
+            <p>
+              One of the best resources for learning more about these hikes and
+              any other hikes within Colorado is the
+              <a href="https://alltrails.com" target="_blank">AllTrails</a>
+              website. Start with a search for "Colorado 14ers" or "Rocky
+              Mountain National Park". Chances are, Gary has been there.
+            </p>
+          </article>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; <span id="year">2025</span>. All Rights Reserved.</p>
+        <p><a href="mailto:jcantu@jcantu.com">jcantu@jcantu.com</a></p>
+      </footer>
+    </div>
+
+    <script>
+      // keep footer year current
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+/*
+  Student Name: Jonathan Cantu
+  File Name: styles.css
+  Date: November 23, 2025
+*/
+
+/* CSS Reset */
+body, header, footer, nav, main, div, img, h1, h3 {
+    margin: 0;
+    padding: 0;
+    border: 0 ;
+    text-align: center;
+}
+
+:root{
+  --bg: #ffffff;
+  --accent: #000000;
+  --muted: #111111;
+  --surface: #ffffff;
+  --border: #e6e6e6;
+  --radius: 8px;
+  --max-width: 900px;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--muted);
+  line-height:1.5;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #228B22; /* do this so that it does not appear as transparent when the user scrolls down, which will make the logo appear on top of the subsequent elements. */
+  height: 300px;
+}
+
+/* ensure header image centers reliably and is constrained */
+header img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style rules for navigation area */
+nav {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    text-decoration: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover pseudo-selector */
+nav a:hover {
+    color: darkcyan;
+}
+
+/* Alternating row colors */
+.row-1 {
+    background: #e8f6ff;
+}
+.row-2 {
+    background: #f4f4f4;
+}
+
+/* Hide mobile list by default */
+.mobile-list {
+    display: none;
+}
+
+/* Desktop/Tablet table formatting */
+.desktop-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.desktop-table td {
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+/* Hobby grid */
+.hobby-card {
+    padding: 1rem;
+    border: 2px solid #ccc;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    background: white;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+main{
+  max-width:var(--max-width);
+  margin:1.25rem auto;
+  padding:1rem;
+  background:transparent;
+}
+
+/* make embedded maps responsive */
+.map {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3; /* modern browsers */
+  border: 0;
+}
+
+footer{
+  background:var(--surface);
+  padding:1rem;
+  text-align:center;
+  color:var(--muted);
+  border-top:1px solid var(--border);
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}
+
+
+/* Media Queries: */
+
+/* Large Desktop — with gradient background */
+@media screen and (min-width: 1400px) {
+    body {
+        background: linear-gradient(to bottom right, #b5e3ff, #ffffff);
+    }
+
+    .hobby-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) and (max-width: 1399px) {
+    .hobby-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .hobby-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    /* Hide desktop table */
+    .desktop-table {
+        display: none;
+    }
+
+    /* Show mobile list */
+    .mobile-list {
+        display: block;
+        list-style: none;
+        padding: 0;
+    }
+
+    .hobby-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .about-container {
+        display: block;
+    }
+}
+
+/* Print */
+@media print {
+    nav, footer {
+        display: none;
+    }
+}
