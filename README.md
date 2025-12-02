@@ -1,7 +1,7 @@
 # WEB200_306O bioSite Project
 
-#### Jonathan Cantu
-#### December 2, 2025
+#### Author: Jonathan Cantu
+#### Date Published: December 2, 2025
 
 ## Introduction
 
