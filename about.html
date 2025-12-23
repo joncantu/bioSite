@@ -138,7 +138,7 @@
       </div>
       <div id="contact-form">
         <h2>Contact Us:</h2>
-        <form action="#" method="post" novalidate>
+        <form id="contactForm">
 
           <div>
             <label for="first-name">First name</label>
@@ -170,6 +170,23 @@
     // keep footer year current
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from submitting normally
+
+    const form = event.target;
+    const formData = new FormData(form);
+    let outputHTML = "<h3>Form Values:</h3><ul>";
+
+    // Loop through all form entries
+    for (let [name, value] of formData.entries()) {
+        outputHTML += `<li><strong>${name}:</strong> ${value}</li>`;
+    }
+
+    outputHTML += "</ul>";
+    document.getElementById('output').innerHTML = outputHTML;
+});
+</script>
 </body>
 
 </html>
