@@ -7,142 +7,162 @@
 -->
 
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="css/styles.css">
-    <title>BioSite</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
 
-  <body>
-    <div id="container">
-      <header>
-        <h1>Gary Jones</h1>
-        <a href="index.html"><img src="images/Gary.jpg" alt="Image of Gary"></a>
-      </header>
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>BioSite</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-      <nav aria-label="Main navigation">
-        <p>
-          <a href="index.html">Home</a> &nbsp; &#9475; &nbsp;
-          <a href="about.html">About Gary</a> &nbsp; &#9475; &nbsp;
-          <a href="hobby.html">Hobby</a>
-        </p>
-      </nav>
+<body>
+  <div id="container">
+    <header>
+      <h1>Gary Jones</h1>
+      <a href="index.html"><img src="images/Gary.jpg" alt="Image of Gary"></a>
+    </header>
 
-      <!-- Use the main area to add the main content of the webpage -->
-      <main>
-        <div id="intro">
+    <nav aria-label="Main navigation">
+      <p>
+        <a href="index.html">Home</a> &nbsp; &#9475; &nbsp;
+        <a href="about.html">About Gary</a> &nbsp; &#9475; &nbsp;
+        <a href="hobby.html">Hobby</a>
+      </p>
+    </nav>
 
-          <!-- Desktop/Tablet TABLE layout -->
-          <table class="desktop-table">
-            <tr class="row-1">
-              <td>
-                <p>
-                  Welcome to a site about Gary Jones. Gary is originally from
-                  southern California but has resided in Colorado for over 30
-                  years. He has been retired since his early 50s and decided to
-                  take up rock climbing and hiking. He is an avid hiker and has
-                  been for decades. Gary is currently in his 70s and still hikes
-                  and summits mountains as recently as this year (2025).
-                </p>
-              </td>
-              <td>
-                <p>
-                  Gary has summited over 20 different 14ers (peaks of 14,000
-                  feet or higher) - some of them multiple times - within the
-                  state of Colorado as well as dozens of 13,000+ peaks. Gary has
-                  also been on several hikes across the globe including Utah,
-                  New Zealand, and Peru.
-                </p>
-              </td>
-            </tr>
-            <tr class="row-2">
-              <td>
-                <img src="images/GaryOnLedge.jpg" alt="Gary standing at the edge of ledge on an outcropping rock formation hundreds of feet above a valley.">
-                <p>
-                  Among Gary's many accomplishments he has hiked Long's Peak
-                  (multiple times), Quandary Peak (both from the East and West
-                  approach), and Mt. Elbert. As well as many multiple peak
-                  summit hikes such as Mt. Democrat, Mt. Cameron, and Mt.
-                  Lincoln all in one day! There was also his hiking feat of
-                  Gray's Peak and Torreys Peak in one day.
-                </p>
-              </td>
-              <td>
-                <img src="images/GaryOnAnotherLedge.jpg" alt="Gary standing at the edge of yet another ledge this time in Bryce Canyon and Arches National Parks in Utah.">
-                <p>
-                  Some of Gary's other accomplishments are all of the lower
-                  elevation hikes (still above 9,000 feet) which include Twin
-                  Sisters, Storm Mountain, Sheep Mountain, and many others. Gary
-                  enjoys both day hikes as well as multi-day backpacking trips.
-                  He has done several backpacking trips in the Maroon Bells area
-                  as well as in Rocky Mountain National Park. Gary enjoys
-                  exploring new trails as well as revisiting favorite old
-                  trails.
-                </p>
-              </td>
-            </tr>
-          </table>
+    <!-- Use the main area to add the main content of the webpage -->
+    <main>
+      <div id="intro">
+        <div id="video-container">
 
-          <!-- Mobile list layout -->
-           <ul class="mobile-list">
-            <li class="row-1">
-                <p>
-                  Welcome to a site about Gary Jones. Gary is originally from
-                  southern California but has resided in Colorado for over 30
-                  years. He has been retired since his early 50s and decided to
-                  take up rock climbing and hiking. He is an avid hiker and has
-                  been for decades. Gary is currently in his 70s and still hikes
-                  and summits mountains as recently as this year (2025).
-                </p>
-            </li>
-            <li class="row-2">
-                <p>
-                  Gary has summited over 20 different 14ers (peaks of 14,000
-                  feet or higher) - some of them multiple times - within the
-                  state of Colorado as well as dozens of 13,000+ peaks. Gary has
-                  also been on several hikes across the globe including Utah,
-                  New Zealand, and Peru.
-                </p>
-            </li>
-            <li class="row-1">
-                <img src="images/GaryOnLedge.jpg" alt="Gary standing at the edge of ledge on an outcropping rock formation hundreds of feet above a valley.">
-                <p>
-                  Among Gary's many accomplishments he has hiked Long's Peak
-                  (multiple times), Quandary Peak (both from the East and West
-                  approach), and Mt. Elbert. As well as many multiple peak
-                  summit hikes such as Mt. Democrat, Mt. Cameron, and Mt.
-                  Lincoln all in one day! There was also his hiking feat of
-                  Gray's Peak and Torreys Peak in one day.
-                </p>
+          <video controls width="640">
+            <source src="media/GaryAndMeOnTopOfSheepsMountain.mp4" type="video/mp4">
 
-            </li>
-            <li class="row-2">
-                <img src="images/GaryOnAnotherLedge.jpg" alt="Gary standing at the edge of yet another ledge this time in Bryce Canyon and Arches National Parks in Utah.">
-                <p>
-                  Some of Gary's other accomplishments are all of the lower
-                  elevation hikes (still above 9,000 feet) which include Twin
-                  Sisters, Storm Mountain, Sheep Mountain, and many others. Gary
-                  enjoys both day hikes as well as multi-day backpacking trips.
-                  He has done several backpacking trips in the Maroon Bells area
-                  as well as in Rocky Mountain National Park. Gary enjoys
-                  exploring new trails as well as revisiting favorite old
-                  trails.
-                </p>
-            </li>
-           </ul>
+            <!-- Captions (subtitles) -->
+            <track src="media/captions.vtt" kind="captions" srclang="en" label="English Captions" default>
+
+            <!-- Audio Descriptions -->
+            <track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions">
+
+            Your browser does not support the video tag.
+          </video>
         </div>
-      </main>
 
-      <footer>
-        <p>&copy; <span id="year">2025</span>. All Rights Reserved.</p>
-        <p><a href="mailto:jcantu@jcantu.com">jcantu@jcantu.com</a></p>
-      </footer>
-    </div>
+        <!-- Desktop/Tablet TABLE layout -->
+        <table class="desktop-table">
+          <tr class="row-1">
+            <td>
+              <p>
+                Welcome to a site about Gary Jones. Gary is originally from
+                southern California but has resided in Colorado for over 30
+                years. He has been retired since his early 50s and decided to
+                take up rock climbing and hiking. He is an avid hiker and has
+                been for decades. Gary is currently in his 70s and still hikes
+                and summits mountains as recently as this year (2025).
+              </p>
+            </td>
+            <td>
+              <p>
+                Gary has summited over 20 different 14ers (peaks of 14,000
+                feet or higher) - some of them multiple times - within the
+                state of Colorado as well as dozens of 13,000+ peaks. Gary has
+                also been on several hikes across the globe including Utah,
+                New Zealand, and Peru.
+              </p>
+            </td>
+          </tr>
+          <tr class="row-2">
+            <td>
+              <img src="images/GaryOnLedge.jpg"
+                alt="Gary standing at the edge of ledge on an outcropping rock formation hundreds of feet above a valley.">
+              <p>
+                Among Gary's many accomplishments he has hiked Long's Peak
+                (multiple times), Quandary Peak (both from the East and West
+                approach), and Mt. Elbert. As well as many multiple peak
+                summit hikes such as Mt. Democrat, Mt. Cameron, and Mt.
+                Lincoln all in one day! There was also his hiking feat of
+                Gray's Peak and Torreys Peak in one day.
+              </p>
+            </td>
+            <td>
+              <img src="images/GaryOnAnotherLedge.jpg"
+                alt="Gary standing at the edge of yet another ledge this time in Bryce Canyon and Arches National Parks in Utah.">
+              <p>
+                Some of Gary's other accomplishments are all of the lower
+                elevation hikes (still above 9,000 feet) which include Twin
+                Sisters, Storm Mountain, Sheep Mountain, and many others. Gary
+                enjoys both day hikes as well as multi-day backpacking trips.
+                He has done several backpacking trips in the Maroon Bells area
+                as well as in Rocky Mountain National Park. Gary enjoys
+                exploring new trails as well as revisiting favorite old
+                trails.
+              </p>
+            </td>
+          </tr>
+        </table>
 
-    <script>
-      // keep footer year current
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+        <!-- Mobile list layout -->
+        <ul class="mobile-list">
+          <li class="row-1">
+            <p>
+              Welcome to a site about Gary Jones. Gary is originally from
+              southern California but has resided in Colorado for over 30
+              years. He has been retired since his early 50s and decided to
+              take up rock climbing and hiking. He is an avid hiker and has
+              been for decades. Gary is currently in his 70s and still hikes
+              and summits mountains as recently as this year (2025).
+            </p>
+          </li>
+          <li class="row-2">
+            <p>
+              Gary has summited over 20 different 14ers (peaks of 14,000
+              feet or higher) - some of them multiple times - within the
+              state of Colorado as well as dozens of 13,000+ peaks. Gary has
+              also been on several hikes across the globe including Utah,
+              New Zealand, and Peru.
+            </p>
+          </li>
+          <li class="row-1">
+            <img src="images/GaryOnLedge.jpg"
+              alt="Gary standing at the edge of ledge on an outcropping rock formation hundreds of feet above a valley.">
+            <p>
+              Among Gary's many accomplishments he has hiked Long's Peak
+              (multiple times), Quandary Peak (both from the East and West
+              approach), and Mt. Elbert. As well as many multiple peak
+              summit hikes such as Mt. Democrat, Mt. Cameron, and Mt.
+              Lincoln all in one day! There was also his hiking feat of
+              Gray's Peak and Torreys Peak in one day.
+            </p>
+
+          </li>
+          <li class="row-2">
+            <img src="images/GaryOnAnotherLedge.jpg"
+              alt="Gary standing at the edge of yet another ledge this time in Bryce Canyon and Arches National Parks in Utah.">
+            <p>
+              Some of Gary's other accomplishments are all of the lower
+              elevation hikes (still above 9,000 feet) which include Twin
+              Sisters, Storm Mountain, Sheep Mountain, and many others. Gary
+              enjoys both day hikes as well as multi-day backpacking trips.
+              He has done several backpacking trips in the Maroon Bells area
+              as well as in Rocky Mountain National Park. Gary enjoys
+              exploring new trails as well as revisiting favorite old
+              trails.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year">2025</span>. All Rights Reserved.</p>
+      <p><a href="mailto:jcantu@jcantu.com">jcantu@jcantu.com</a></p>
+    </footer>
+  </div>
+
+  <script>
+    // keep footer year current
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
 </html>
