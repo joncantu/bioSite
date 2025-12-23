@@ -48,6 +48,12 @@ header img {
   height: auto;
 }
 
+video {
+  max-width: 100%; /* Prevents overflow */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes inline spacing issues */
+}
+
 /* Style rules for navigation area */
 nav {
   padding: 1%;
