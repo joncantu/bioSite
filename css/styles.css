@@ -196,6 +196,12 @@ footer a {
   text-decoration: none;
 }
 
+/* Base grid */
+.hobby-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
 
 /* Media Queries: */
 
@@ -207,6 +213,7 @@ footer a {
 
   main {
     max-width: none; /* remove max-width entirely */
+    width: 100%;
   }
 
   .hobby-grid {
@@ -226,6 +233,7 @@ footer a {
 
   main {
     max-width: none; /* remove max-width entirely */
+    width: 100%;
   }
 }
 
