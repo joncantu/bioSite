@@ -75,12 +75,17 @@ header img {
 }
 
 video {
-  max-width: 100%;
-  /* Prevents overflow */
-  height: auto;
-  /* Maintains aspect ratio */
-  display: block;
-  /* Removes inline spacing issues */
+  max-width: 80%; /* Prevents overflow */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes inline spacing issues */
+  margin: 0 auto; /* Centers the video */
+}
+
+#video-container {
+  text-align: center;
+  align-items: center;
+  margin: 2rem 0;
+  align-self: center;
 }
 
 /* Style rules for navigation area */
