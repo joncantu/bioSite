@@ -5,5 +5,5 @@
 
 ## Introduction
 
-This is a simple abbreviated bio website about Gary Jones and his hiking endeavors.
+This is a simple abbreviated bio website about Gary and his hiking endeavors.
 
