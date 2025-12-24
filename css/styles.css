@@ -27,7 +27,7 @@ h3 {
   --surface: #ffffff;
   --border: #e6e6e6;
   --radius: 8px;
-  --max-width: 900px;
+  --max-width: 1400px;
 }
 
 /* Make iframes (like Google Maps embeds) responsive */
@@ -205,6 +205,10 @@ footer a {
     background: linear-gradient(to bottom right, #b5e3ff, #ffffff);
   }
 
+  main {
+    max-width: none; /* remove max-width entirely */
+  }
+
   .hobby-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -218,6 +222,10 @@ footer a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+  }
+
+  main {
+    max-width: none; /* remove max-width entirely */
   }
 }
 
