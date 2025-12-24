@@ -196,13 +196,6 @@ footer a {
   text-decoration: none;
 }
 
-/* Base grid */
-.hobby-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
 /* Media Queries: */
 
 /* Large Desktop — with gradient background */
