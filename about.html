@@ -76,9 +76,16 @@
                   bumps and bruises. But none of these have stopped him from
                   continuing to hike and explore both new and old trails.
                 </h3>
+                <img src="images/GaryHandStitches.jpg"
+                  alt="Gary's hand with stitches for lacerations from one his more dangerous rock climbing adventures.">
               </section>
-              <img src="images/GaryHandStitches.jpg"
-                alt="Gary's hand with stitches for lacerations from one his more dangerous rock climbing adventures.">
+              <section>
+                <h3>
+                  Gary usually enjoys a well-deserved good fresh brew at a local microbrewery with his hiking friends
+                  after a long hike.
+                </h3>
+                <img src="images/Zwei.jpg" alt="Gary enjoying a beer at Zwei brewery in Fort Collins, CO.">
+              </section>
             </td>
           </tr>
         </table>
@@ -126,9 +133,16 @@
                 But none of these have stopped him from continuing to hike and
                 explore both new and old trails.
               </h3>
+              <img src="images/GaryHandStitches.jpg"
+                alt="Gary's hand with stitches for lacerations from one his more dangerous rock climbing adventures.">
             </section>
-            <img src="images/GaryHandStitches.jpg"
-              alt="Gary's hand with stitches for lacerations from one his more dangerous rock climbing adventures.">
+            <section>
+              <h3>
+                Gary usually enjoys a well-deserved good fresh brew at a local microbrewery with his hiking friends
+                after a long hike.
+              </h3>
+              <img src="images/Zwei.jpg" alt="Gary enjoying a beer at Zwei brewery in Fort Collins, CO.">
+            </section>
           </li>
         </ul>
       </div>
@@ -168,23 +182,23 @@
     // keep footer year current
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form from submitting normally
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent form from submitting normally
 
-    const form = event.target;
-    const formData = new FormData(form);
-    let outputHTML = "<h3>Form Values:</h3><ul>";
+      const form = event.target;
+      const formData = new FormData(form);
+      let outputHTML = "<h3>Form Values:</h3><ul>";
 
-    // Loop through all form entries
-    for (let [name, value] of formData.entries()) {
+      // Loop through all form entries
+      for (let [name, value] of formData.entries()) {
         outputHTML += `<li><strong>${name}:</strong> ${value}</li>`;
-    }
+      }
 
-    outputHTML += "</ul>";
-    document.getElementById('output').innerHTML = outputHTML;
-});
-</script>
+      outputHTML += "</ul>";
+      document.getElementById('output').innerHTML = outputHTML;
+    });
+  </script>
 </body>
 
 </html>
